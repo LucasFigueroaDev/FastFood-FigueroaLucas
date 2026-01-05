@@ -32,6 +32,7 @@ Fast Food es una página web de carrito de compras dinámica creada con **HTML5*
 
 Si tienes alguna pregunta o sugerencia, no dudes en contactarme:
 
-- **Nombre:** Figueroa Lucas  
-- **Email:** [lucasafigueroa93@gmail.com](mailto:lucasafigueroa93@gmail.com)  
-- **GitHub:** [https://github.com/LucasFigueroaDev](https://github.com/LucasFigueroaDev)
+- **Nombre**: Figueroa Lucas
+- **Email**: lucasafigueroa93@gmail.com
+- **Portafolio**: https://portafolio-five-xi-26.vercel.app/
+- **Linkedin**: https://linkedin.com/in/lucas-a-figueroa
