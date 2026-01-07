@@ -1,0 +1,25 @@
+{
+    "promos": [
+        {
+            "id": "promo1",
+            "name": "Pizza Party",
+            "description": "Dos pizzas medianas al precio de una. ¡Ideal para compartir!",
+            "image": "./assets/2x1.png",
+            "price": 12.99
+        },
+        {
+            "id": "promo2",
+            "name": "Dúo de Pollo Crocante",
+            "description": "El doble de sabor y crocancia en cada mordida. ¡Probalo!",
+            "image": "./assets/chicken.png",
+            "price": 9.99
+        },
+        {
+            "id": "promo3",
+            "name": "Combo Burger Deluxe",
+            "description": "Pedí tu hamburguesa favorita y llevate otra sin cargo. ¡Solo por hoy!",
+            "image": "./assets/doubleburger.png",
+            "price": 14.99
+        }
+    ]
+}

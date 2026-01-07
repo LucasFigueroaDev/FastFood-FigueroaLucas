@@ -78,8 +78,6 @@ function addCartEventListener() {
             });
             localStorage.setItem('cart', JSON.stringify(cart));
             cartProducts(cart);
-            console.log(cart);
-
         });
     });
 }
