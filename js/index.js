@@ -26,8 +26,6 @@ async function getData() {
         const response = await fetch(urlPromos);
         if (!response.ok) throw new Error("No se pudo cargar los productos");
         data = await response.json();
-        console.log(data);
-        
         renderCard(data.promos);
         cartProducts(cart);
     } catch (error) {
