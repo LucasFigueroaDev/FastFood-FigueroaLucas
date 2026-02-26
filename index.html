@@ -1,36 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <!--meta-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Fast Food - La mejor casa de comidas de la ciudad. Sabores que enamoran con deliciosas hamburguesas, papas fritas crujientes y más.">
+    <meta name="description" content="Fast Food - La mejor casa de comidas de la ciudad. Sabores que enamoran con deliciosas hamburguesas, papas fritas crujientes y más.">
     <meta name="author" content="Figueroa Lucas">
     <meta name="robots" content="index, follow">
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Fast Food - Sabores que Enamoran">
-    <meta property="og:description"
-        content="Deliciosas hamburguesas, papas fritas crujientes y mucho más en Fast Food. ¡Pide ahora!">
+    <meta property="og:description" content="Deliciosas hamburguesas, papas fritas crujientes y mucho más en Fast Food. ¡Pedí ahora!">
     <meta property="og:url" content="https://lucasfigueroadev.github.io/Entregafinal-FigueroaLucas/">
-    <meta property="og:image"
-        content="https://raw.githubusercontent.com/LucasFigueroaDev/Entregafinal-FigueroaLucas/main/assets/logo.png">
-    <!--fonts-->
+    <meta property="og:image" content="https://raw.githubusercontent.com/LucasFigueroaDev/Entregafinal-FigueroaLucas/main/assets/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <!--animate-->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <!--sweetAlert-->
     <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.1/dist/sweetalert2.min.css" rel="stylesheet">
-    <!--css-->
     <link rel="stylesheet" href="css/main.css">
-    <!--Title-->
     <title>Fast Food</title>
 </head>
 
@@ -38,57 +26,58 @@
     <header class="navbar">
         <nav class="container navbar_container">
             <div class="navbar_container_logo">
-                <img src="assets/logo.png" alt="Logo de la empresa" />
+                <img src="assets/logo.png" alt="Logo de Fast Food" />
             </div>
-            <button class="navbar_container_menu-toggle">☰</button>
+            <button class="navbar_container_menu-toggle" aria-label="Abrir menú">☰</button>
             <ul class="navbar_container_links">
                 <li><a class="navbar_container_links_link" href="index.html">Home</a></li>
                 <li><a class="navbar_container_links_link" href="pages/offers.html">Ofertas</a></li>
-                <li><a class="navbar_container_links_link" href="pages/products.html">Menu</a></li>
+                <li><a class="navbar_container_links_link" href="pages/products.html">Menú</a></li>
                 <li><a class="navbar_container_links_link" href="#about-us">Sobre nosotros</a></li>
                 <li><a class="navbar_container_links_link" href="#contact">Contacto</a></li>
             </ul>
             <div class="navbar_container_icon">
-                <a href="pages/cart.html">🛒<span id="count">0</span></a>
+                <a href="pages/cart.html" aria-label="Ver carrito">🛒<span id="count">0</span></a>
             </div>
         </nav>
     </header>
+
     <main>
         <section class="section-hero">
             <div class="container section-hero_container">
-                <h1 class="section-hero_title fade-in">¡Sabores que Enamoran!</h1>
-                <p class="section-hero_txt fade-in">
-                    ¡Deliciosas hamburguesas, papas fritas crujientes y mucho más!
-                </p>
-                <button class="section-hero_button fade-in">Pedir Ahora</button>
-            </div>
-        </section>
-        <section class="section-deals">
-            <div class="container">
-                <h2 class="section-deals_title fade-in">¡Promos que te Sorprenden!</h2>
-                <div class="section-deals_grid">
-                    
+                <span class="section-hero_badge fade-in">Delivery rápido • Ingredientes frescos</span>
+                <h1 class="section-hero_title fade-in">Sabores que Enamoran</h1>
+                <p class="section-hero_txt fade-in">Hamburguesas explosivas, papas crocantes y combos irresistibles para cualquier momento.</p>
+                <div class="section-hero_actions fade-in">
+                    <button class="section-hero_button">Pedir ahora</button>
+                    <a href="pages/products.html" class="section-hero_button secondary">Ver menú</a>
                 </div>
             </div>
         </section>
+
+        <section class="section-deals">
+            <div class="container">
+                <h2 class="section-deals_title fade-in">Promos que te sorprenden</h2>
+                <div class="section-deals_grid"></div>
+            </div>
+        </section>
+
         <section id="about-us" class="section-about-us">
             <div class="container">
-                <h2 class="section-about-us_title fade-in">Quienes somos</h2>
+                <h2 class="section-about-us_title fade-in">Quiénes somos</h2>
                 <div class="section-about-us_about-content">
-                    <div class="section-about-us_about-content_images">
-                        <img src="./assets/perfil1.png" alt="Person 1" />
-                        <img src="./assets/perfil3.png" alt="Person 2" />
-                        <img src="./assets/perfil2.png" alt="Person 3" />
+                    <div class="section-about-us_about-content_images fade-in">
+                        <img src="./assets/perfil1.png" alt="Integrante del equipo 1" />
+                        <img src="./assets/perfil3.png" alt="Integrante del equipo 2" />
+                        <img src="./assets/perfil2.png" alt="Integrante del equipo 3" />
                     </div>
                     <p class="section-about-us_about-content_description fade-in">
-                        En FastFood, ¡creemos en alegrar cada bocado! Nuestra pasión por la comida deliciosa y un
-                        servicio excepcional nos impulsa a crear experiencias gastronómicas inolvidables. Usamos
-                        ingredientes frescos y mucho cariño para preparar tus comidas favoritas. ¡Únete a nuestra
-                        familia y prueba la diferencia!
+                        En FastFood creemos en alegrar cada bocado. Nuestra pasión por la comida deliciosa y un servicio excepcional nos impulsa a crear experiencias inolvidables. Usamos ingredientes frescos y mucho cariño para preparar tus comidas favoritas.
                     </p>
                 </div>
             </div>
         </section>
+
         <section id="contact" class="section-contact">
             <div class="container">
                 <h2 class="section-contact_title fade-in">Contacto</h2>
@@ -106,8 +95,7 @@
                             </div>
                             <div class="section-contact_grid_form-card_group">
                                 <label for="message">Mensaje</label>
-                                <textarea id="message" name="message" placeholder="Tu mensaje" rows="6"
-                                    required></textarea>
+                                <textarea id="message" name="message" placeholder="Tu mensaje" rows="6" required></textarea>
                             </div>
                             <button type="submit" class="section-contact_grid_form-card_button">Enviar mensaje</button>
                         </form>
@@ -119,16 +107,14 @@
                         <p>+1 (555) 123-4567</p>
                         <p>info@fastfood.com</p>
                         <div>
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d45801.29800765136!2d-64.5046375537033!3d-31.43610979458028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smaps!5e0!3m2!1ses-419!2sar!4v1753836259925!5m2!1ses-419!2sar"
-                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d45801.29800765136!2d-64.5046375537033!3d-31.43610979458028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smaps!5e0!3m2!1ses-419!2sar!4v1753836259925!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
     <footer class="section-footer">
         <div class="section-footer_content">
             <div class="container">
@@ -137,12 +123,11 @@
                     <a href="#">Terms of Service</a>
                     <a href="#">Sitemap</a>
                 </div>
-                <div class="section-footer_content_copyright">
-                    © 2024 FastFood. All rights reserved. Design by Figueroa Lucas
-                </div>
+                <div class="section-footer_content_copyright">© 2026 FastFood. All rights reserved. Design by Figueroa Lucas</div>
             </div>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="module" src="js/index.js"></script>
 </body>
